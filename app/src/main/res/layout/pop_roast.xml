@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    android:background="@mipmap/bg_pop_roast">
+    <TextView
+        android:id="@+id/publish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布吐槽"
+        android:textSize="@dimen/sp_14"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_16"/>
+    <LinearLayout
+        android:id="@+id/reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_16"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_20">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复我的"
+            android:textSize="@dimen/sp_14"/>
+        <ImageView
+            android:id="@+id/img"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:src="@drawable/circle_yello"
+            />
+    </LinearLayout>
+
+</LinearLayout>

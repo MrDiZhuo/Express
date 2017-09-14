@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@mipmap/bg_place"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_32"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:text="应支付金额:"
+            android:textSize="@dimen/sp_14"/>
+
+        <TextView
+            android:id="@+id/needmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="¥3.00"
+            android:textColor="@color/yello_02"
+            android:textSize="@dimen/sp_40"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:id="@+id/chit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="代金券"
+            android:textSize="@dimen/sp_14"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chit_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="未使用"
+                android:textColor="@color/gray_07"
+                android:textSize="@dimen/sp_12"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:padding="@dimen/dp_16"
+                android:src="@mipmap/right"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/gray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实际支付金额:"/>
+            <TextView
+                android:id="@+id/realpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥3.00"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_40"
+                android:layout_marginLeft="@dimen/dp_16"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_order_btn"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_8"
+            android:text="确认支付"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_17"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

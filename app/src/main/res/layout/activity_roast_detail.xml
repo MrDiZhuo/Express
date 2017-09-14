@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_myorder"
+    tools:context="com.zwd.express.Context.roastDetail.View.RoastDetailActivity">
+    <com.zwd.express.layout.NormalToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/refresh">
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp_16"
+                        android:paddingLeft="@dimen/dp_16"
+                        android:paddingRight="@dimen/dp_16"
+                        android:background="@mipmap/bg_roastdetail"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/head"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@mipmap/pic_selfinfo"/>
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_8"
+                                android:text="小明"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_14"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ll_center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_16"
+                            android:layout_marginRight="@dimen/dp_16"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/context"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我是毫无内容的正文"
+                                android:layout_marginBottom="@dimen/dp_8"
+                                android:textSize="@dimen/sp_12"/>
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/grid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_8"
+                                android:paddingLeft="@dimen/dp_2"
+                                android:layout_marginRight="@dimen/dp_8"
+                                android:layout_marginBottom="@dimen/dp_16"
+                                android:layout_gravity="center"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="LinearLayoutManager"/>
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@mipmap/bg_roast_detail"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_weight="1"
+                android:background="@mipmap/bg_edit"
+                android:gravity="center_vertical"
+                android:hint="写评论..."
+                android:paddingLeft="@dimen/dp_4"
+                android:textColor="@color/gray_06"
+                android:textColorHint="@color/gray_11"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="5"
+                android:background="@mipmap/btn_roast_un"
+                android:gravity="center"
+                android:text="回复"
+                android:textColor="@color/gray_11"
+                android:textSize="@dimen/sp_14"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
