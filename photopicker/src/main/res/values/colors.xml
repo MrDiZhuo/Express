@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="action_text_color_normal" >#cfcfcf</color>
+    <color name="action_text_color_pressed" >#353535</color>
+    <color name="action_text_color_enabled" >#818585</color>
+    <color name="tab_after">#ff726b</color>
+    <color name="title">#ffffff</color>
+    <color name="dark">#494949</color>
+</resources>

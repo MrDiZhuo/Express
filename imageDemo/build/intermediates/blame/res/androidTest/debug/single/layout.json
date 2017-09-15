@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\image_detail_pager.xml",
+        "source": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\image_detail_pager.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\image_detail_fragment.xml",
+        "source": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\image_detail_fragment.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gridview_item.xml",
+        "source": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\gridview_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\list_item.xml",
+        "source": "D:\\Android\\Project\\Me\\Express\\imageDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\list_item.xml"
+    }
+]
